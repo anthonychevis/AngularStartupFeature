@@ -1,0 +1,76 @@
+2017-07-30 14:41:03.782 +08:00 [Information] User profile is available. Using '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-07-30 14:41:04.487 +08:00 [Debug] Hosting starting
+2017-07-30 14:41:04.757 +08:00 [Debug] Hosting started
+2017-07-30 14:41:04.817 +08:00 [Debug] Connection id ""0HL6N2NPQA1KT"" started.
+2017-07-30 14:41:04.817 +08:00 [Debug] Connection id ""0HL6N2NPQA1KS"" started.
+2017-07-30 14:41:05.070 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=698197063574999  
+2017-07-30 14:41:05.070 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=27450658182951  
+2017-07-30 14:41:13.895 +08:00 [Information] webpack built 6d077c6bc3b7823a21e6 in 10639ms
+2017-07-30 14:41:31.430 +08:00 [Information] User profile is available. Using '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-07-30 14:41:32.034 +08:00 [Debug] Hosting starting
+2017-07-30 14:41:32.250 +08:00 [Debug] Hosting started
+2017-07-30 14:41:32.345 +08:00 [Debug] Connection id ""0HL6N2O20R9OA"" started.
+2017-07-30 14:41:32.575 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/  
+2017-07-30 14:41:32.742 +08:00 [Debug] The request path "/" does not match a supported file type
+2017-07-30 14:41:32.837 +08:00 [Debug] Reading data from file '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys\key-5423be11-dd17-4a1d-ad98-0dc862070ac1.xml"'.
+2017-07-30 14:41:32.852 +08:00 [Debug] Reading data from file '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys\key-58880b17-de0c-4c78-b010-68d0cc429d18.xml"'.
+2017-07-30 14:41:32.853 +08:00 [Debug] Reading data from file '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys\key-747de244-280b-4c00-b3a6-6a05ea411010.xml"'.
+2017-07-30 14:41:32.868 +08:00 [Debug] Found key {5423be11-dd17-4a1d-ad98-0dc862070ac1}.
+2017-07-30 14:41:32.883 +08:00 [Debug] Found key {58880b17-de0c-4c78-b010-68d0cc429d18}.
+2017-07-30 14:41:32.883 +08:00 [Debug] Found key {747de244-280b-4c00-b3a6-6a05ea411010}.
+2017-07-30 14:41:32.911 +08:00 [Debug] Considering key {58880b17-de0c-4c78-b010-68d0cc429d18} with expiration date 2017-10-15 03:23:59Z as default key.
+2017-07-30 14:41:32.949 +08:00 [Debug] Decrypting secret element using Windows DPAPI.
+2017-07-30 14:41:32.990 +08:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2017-07-30 14:41:33.006 +08:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2017-07-30 14:41:33.031 +08:00 [Debug] Using key {58880b17-de0c-4c78-b010-68d0cc429d18} as the default key.
+2017-07-30 14:41:33.147 +08:00 [Information] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Cookies".
+2017-07-30 14:41:33.664 +08:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2017-07-30 14:41:33.788 +08:00 [Debug] Executing action "Kit.Feature.Home.HomeController.Index (AngularStarterFeature)"
+2017-07-30 14:41:33.842 +08:00 [Information] Authorization was successful for user: "105894798481185436424".
+2017-07-30 14:41:33.955 +08:00 [Information] Executing action method "Kit.Feature.Home.HomeController.Index (AngularStarterFeature)" with arguments (null) - ModelState is Valid
+2017-07-30 14:41:33.961 +08:00 [Information] HttpContext: @HttpContext
+2017-07-30 14:41:33.971 +08:00 [Debug] Executed action method "Kit.Feature.Home.HomeController.Index (AngularStarterFeature)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2017-07-30 14:41:34.187 +08:00 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2017-07-30 14:41:34.232 +08:00 [Debug] Code generation for the Razor file at '"/Feature/Home/Index.cshtml"' started.
+2017-07-30 14:41:35.226 +08:00 [Debug] Code generation for the Razor file at '"/Feature/Home/Index.cshtml"' completed in 990.4034ms.
+2017-07-30 14:41:35.234 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/Home/Index.cshtml"' started.
+2017-07-30 14:41:37.881 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/Home/Index.cshtml"' completed in 2646.9688ms.
+2017-07-30 14:41:37.896 +08:00 [Debug] Code generation for the Razor file at '"/Feature/_ViewStart.cshtml"' started.
+2017-07-30 14:41:37.912 +08:00 [Debug] Code generation for the Razor file at '"/Feature/_ViewStart.cshtml"' completed in 14.8881ms.
+2017-07-30 14:41:37.912 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/_ViewStart.cshtml"' started.
+2017-07-30 14:41:37.982 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/_ViewStart.cshtml"' completed in 69.7694ms.
+2017-07-30 14:41:37.994 +08:00 [Debug] The view '"Index"' was found.
+2017-07-30 14:41:37.997 +08:00 [Information] Executing ViewResult, running view at path "Feature\Home\Index.cshtml".
+2017-07-30 14:41:41.181 +08:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2017-07-30 14:41:41.182 +08:00 [Debug] Code generation for the Razor file at '"/Feature/Shared/_Layout.cshtml"' started.
+2017-07-30 14:41:41.214 +08:00 [Debug] Code generation for the Razor file at '"/Feature/Shared/_Layout.cshtml"' completed in 31.7482ms.
+2017-07-30 14:41:41.215 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/Shared/_Layout.cshtml"' started.
+2017-07-30 14:41:41.295 +08:00 [Debug] Compilation of the generated code for the Razor file at '"/Feature/Shared/_Layout.cshtml"' completed in 80.2923ms.
+2017-07-30 14:41:41.596 +08:00 [Information] Executed action "Kit.Feature.Home.HomeController.Index (AngularStarterFeature)" in 7802.6355ms
+2017-07-30 14:41:41.698 +08:00 [Debug] Connection id ""0HL6N2O20R9OA"" completed keep alive response.
+2017-07-30 14:41:41.738 +08:00 [Information] Request finished in 9205.9547ms 200 text/html; charset=utf-8
+2017-07-30 14:41:41.925 +08:00 [Information] webpack built 6d077c6bc3b7823a21e6 in 10908ms
+2017-07-30 14:41:41.925 +08:00 [Information] Node will restart because file changed: C:\DEV\Playtime\AngularStartupFeature\wwwroot\dist\main-client.js
+2017-07-30 14:41:43.142 +08:00 [Debug] Connection id ""0HL6N2O20R9OB"" started.
+2017-07-30 14:41:43.591 +08:00 [Debug] Connection id ""0HL6N2O20R9OC"" started.
+2017-07-30 14:41:44.203 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=7645531477413598  
+2017-07-30 14:41:44.225 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=004423376431712  
+2017-07-30 14:41:44.227 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=5151369427801408  
+2017-07-30 14:43:32.029 +08:00 [Debug] Connection id ""0HL6N2O20R9OD"" started.
+2017-07-30 14:43:32.030 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=4542140272633594  
+2017-07-30 14:51:51.683 +08:00 [Information] User profile is available. Using '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-07-30 14:51:52.348 +08:00 [Debug] Hosting starting
+2017-07-30 14:51:52.634 +08:00 [Debug] Hosting started
+2017-07-30 14:51:52.831 +08:00 [Debug] Connection id ""0HL6N2TQU8J73"" started.
+2017-07-30 14:51:52.831 +08:00 [Debug] Connection id ""0HL6N2TQU8J74"" started.
+2017-07-30 14:51:53.044 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=64956407135797  
+2017-07-30 14:51:53.044 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=3446926879474823  
+2017-07-30 14:52:02.360 +08:00 [Information] webpack built 6d077c6bc3b7823a21e6 in 11086ms
+2017-07-30 14:55:12.439 +08:00 [Information] User profile is available. Using '"C:\Users\Anthony\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-07-30 14:55:13.026 +08:00 [Debug] Hosting starting
+2017-07-30 14:55:13.275 +08:00 [Debug] Hosting started
+2017-07-30 14:55:13.334 +08:00 [Debug] Connection id ""0HL6N2VMMCHUR"" started.
+2017-07-30 14:55:13.334 +08:00 [Debug] Connection id ""0HL6N2VMMCHUQ"" started.
+2017-07-30 14:55:13.570 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=3609601844973946  
+2017-07-30 14:55:13.570 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:60022/__webpack_hmr?lastEventId=&r=3431894312359256  
+2017-07-30 14:55:21.719 +08:00 [Information] webpack built 6d077c6bc3b7823a21e6 in 9688ms

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using MediatR;
-
-
-//a30bd294317ae3534e3f7c6612021806
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Kit.Feature.Weather
 {
@@ -32,9 +28,4 @@ namespace Kit.Feature.Weather
             }
         }
     }
-
-  
-
-
-
 }

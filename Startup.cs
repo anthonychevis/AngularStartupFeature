@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using MediatR;
+using Serilog;
+using System.IO;
 
 namespace Kit
 {
@@ -19,6 +21,16 @@ namespace Kit
     {
         public Startup(IHostingEnvironment env)
         {
+            //Log.Logger = new LoggerConfiguration()
+            //   .MinimumLevel.Debug()
+            //   .WriteTo.File(Path.Combine(env.ContentRootPath, "log.txt"))
+            //   .CreateLogger();
+
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo
+                .Console()
+                .CreateLogger();
+
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -47,13 +59,18 @@ namespace Kit
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IApplicationLifetime appLifetime)
         {
 
-            app.UseMiddleware<StackifyMiddleware.RequestTracerMiddleware>();
+            //app.UseMiddleware<StackifyMiddleware.RequestTracerMiddleware>();
 
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
+
+            // flush the log to we can see it
+            //appLifetime.ApplicationStopped.Register(Serilog.Log.CloseAndFlush);
+
 
             if (env.IsDevelopment())
             {
@@ -90,7 +107,6 @@ namespace Kit
                         }
                         return Task.FromResult(0);
                     }
-                    
                 }
             });
 

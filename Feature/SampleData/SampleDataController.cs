@@ -1,9 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Kit.Feature.SampleData
 {
@@ -11,6 +11,13 @@ namespace Kit.Feature.SampleData
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
+        private readonly ILogger _logger;
+        
+        public SampleDataController(ILogger<SampleDataController> logger)
+        {
+            _logger = logger;
+        }
+
         private static string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -19,6 +26,8 @@ namespace Kit.Feature.SampleData
         [HttpGet("[action]")]
         public IEnumerable<WeatherForecast> WeatherForecasts()
         {
+            _logger.LogInformation( nameof(SampleDataController) +  ": {@now}, Tuple: {@Tuple}", DateTime.Now, Tuple.Create("World", 2));
+
             var rng = new Random();
             return Enumerable.Range(1, 20).Select(index => new WeatherForecast
             {
